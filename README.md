@@ -1,2 +1,3 @@
-# AICICLE
-AI-assicted computationally intelligent custom learning environment
+# Power to the Student through AI-enhanced personal learning environments
+
+PAIPLE as a Bacronym
