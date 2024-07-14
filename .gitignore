@@ -163,3 +163,8 @@ cython_debug/
 
 # emacs backup
 *~
+
+# LaTeX
+*.aux
+*.out
+*.pdf
