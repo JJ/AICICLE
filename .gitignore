@@ -168,3 +168,4 @@ cython_debug/
 *.aux
 *.out
 *.pdf
+_region_.*
