@@ -169,3 +169,8 @@ cython_debug/
 *.out
 *.pdf
 _region_.*
+
+# LaTeX
+auto/
+*.blg
+*.bbl
