@@ -71,9 +71,89 @@ Gemini.
 
 \section{Description of the proposed work, expected outcomes, and results}
 
+What we expect to deliver by the end of this project is an open source
+application that works as a class-specific personal learning environment, and
+that the student is able to easily install and carry wherever they want.
 
-\section{Discussion of how the research relates to prior work (including your
-  own)}
+It is a fact that student nowadays use extensively generative AIs to carry out
+class assignments as well as essays; most students are familiarized with the
+free version of any of them. This use is more task-oriented than
+learning-oriented: the learning objective is thus usually removed from the
+equation. On the other hand, it certainly does not help when you have to
+assimilate information related to one subject and deliver it under demand in a
+written or oral exam.
+
+Despite the fact that Personal Learning Environments have been described for
+several decades, and deployed extensively, generally in a top-down fashion as
+Learning Management Systems, its use among the student population is marginal
+\cite{serhan2022systematic}, and generally limited to storing class material
+ellaborated by professors, without any further learning-oriented
+ellaboration.
+
+On the other hand, very recent research \cite{ruiz2024learning} has proved that
+several techniques such as retrieval practice, ellaboration and spacing help
+learning outcomes. What we propose is to use generative AI, fed by contextual
+material and incorporated in the PLE, so that the student is able to receive
+inmediate feedback on the information that has been retrieved, ellaborated
+information, as well as prompts to organize study in periodic study
+sessions. The PLE can give feedback on specific errors in these techniques, as
+well as a study guide for the parts of the material or learning objectives that
+have not been covered in the retrieval or ellaboration exercises. This is
+similar to what is called ungrading \cite{10.1145/3587102.3588816}, but without
+needing to include the professor in the loop or engage their collaboration.
+Additionally, this can be helped by exams elaborated and graded by the AI in the
+same shape (multiple choice, short essay) that the student will be actually
+sitting for later on, a practice that has also been proved helpful for students
+\cite{YANG20197324}.
+
+We will perform the study in different phases, using always groups of at least
+25 students in every group under study. We will use student boards in our
+university to announce the study, as well as in other universities of colleagues
+that are willing to participate. We will try to cover as many disciplines as
+possible, with as many different kind of disciplines as possible. Student
+collaboration will be encouraged via Amazon (or other) gift vouchers, to be
+collected when the survey at the end of the semester is filled correctly and
+telemetry indicates that the use of the facility has been correct. We will organize research in two phases\begin{itemize}
+  \item In a first phase, that will run in parallel to software development,
+    students will be using no PLE at all, or following a manual that we will
+    publish on how to use Gemini or other LLM to improve learning in any
+    subject. This will be used as baseline. When possible, whole classes will be
+    recruited, and we will encourage professors with a 100€ gift voucher. During
+    this phase, a Google Workspace based solution will be developed; this is a
+    familiar tool already deployed in many campuses, and with which many
+    students already work. This solution will use GW to store class material
+    either teacher-provided or found by the student, and will feed it to Gemini
+    to create class-specific models. These will be included in a Google
+    Workspace add-on, which will include calendaring as well as ellaboration
+    grading and retrieval practice with feedback.
+  \item The second phase will effectively use this Google Workspace add-on,
+    available through the Add-on marketplace in beta version, essentially
+    looking at students giving us feedback at the end of the exam period on the
+    results achieved. Making it available through the marketplace will enhance
+    adoption, and the fact that it will also be released as free software will
+    help create a community of developers around it that will be able to help or
+    even drive innovation in this area, adding new capabilities. We will carry
+    out this phase through 2 semesters, one in alpha and the other in beta.
+  \end{itemize}
+
+Software architecture will be organized in such a way that document as well as
+LLM providers are isolated, in such a way that it can be ported to langchains
+easily, if possible (and if resources are available) within the project
+itself. At any rate, the final deliverable will be a minimally viable product
+released as a Google Workspace add-on as well as in a GitHub repository with an
+Affero GPL license.
+
+This line of research continues what was initiated with the EduBots project,
+whose node in Granada was coordinated by the proposer
+\cite{DBLP:journals/eait/MereloCMBAGT24,DBLP:conf/hci/MoraGBCG21}. Lessons
+learned in software development as well as in the deployment of innovations in
+the classroom will be incorporated into this research. It also complements work
+in student-centered teaching recently published \cite{10481/89811}. It continues
+research on use of language models in education initiated recently by other
+researchers, such as \cite{li2024adaptinglargelanguagemodels} but, over all, it
+tries to put in practice insights published  very recently by the already mentioned
+\cite{ruiz2024learning} in a way that can help potentially any student in the world.
+
 
 \section{Explanation of your qualifications to conduct this research}
 
@@ -93,7 +173,9 @@ research in computational intelligence techniques such as neural networks,
 including deep neural nets, and evolutionary algorithms, as well as development
 of free software, thus being able to span the whole development process from
 problem identification through solution deployment through experimental design
-and analysis.
+and analysis. Additionally, as shown in his recent list of publications, he
+maintains collaborations with professors in different universities in 4
+continents, whose collaboration can be requested to recruit new students.
 
 \section{Data policy}
 
